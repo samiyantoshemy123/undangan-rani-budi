@@ -1,159 +1,124 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undangan Pernikahan Rani & Budi</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to right, #fff0f5, #ffe4e1);
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #ffffffd6;
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            color: #b56576;
-        }
-
-        .sub-heading {
-            font-size: 1.2em;
-            color: #555;
-            margin-bottom: 20px;
-        }
-
-        .names {
-            font-size: 2em;
-            font-weight: bold;
-            margin: 20px 0;
-            color: #6a4c93;
-        }
-
-        img.couple {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 20px;
-            margin: 20px 0;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-
-        .info {
-            font-size: 1.1em;
-            margin: 30px 0;
-            line-height: 1.6em;
-        }
-
-        .map {
-            margin: 30px 0;
-        }
-
-        iframe {
-            width: 100%;
-            height: 300px;
-            border: none;
-            border-radius: 10px;
-        }
-
-        .thank-you {
-            margin-top: 30px;
-            font-style: italic;
-            color: #444;
-        }
-
-        .footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #777;
-        }
-
-        .play-button {
-            margin: 20px 0;
-        }
-
-        .play-button button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #b56576;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .play-button button:hover {
-            background-color: #9d4b63;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            .names {
-                font-size: 1.5em;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Undangan Rani & Budi</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #ffe4e1, #fff0f5);
+      color: #333;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #b56576;
+    }
+    .subheading {
+      color: #6a4c93;
+      font-size: 1.2em;
+      margin-bottom: 25px;
+    }
+    .names {
+      font-size: 2em;
+      font-weight: bold;
+      margin: 20px 0;
+      color: #6a4c93;
+    }
+    .couple-photo {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      margin: 20px auto;
+    }
+    .info {
+      font-size: 1.1em;
+      margin: 30px 0;
+      line-height: 1.6;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border-radius: 15px;
+      border: none;
+      margin: 20px 0;
+    }
+    .thankyou {
+      margin-top: 30px;
+      font-style: italic;
+      color: #444;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #999;
+    }
+    .music-notice {
+      font-size: 0.9em;
+      color: #999;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
 
+  <div class="container">
+    <h1>Undangan Pernikahan</h1>
+    <div class="subheading">Kami mengundang Anda untuk hadir dalam hari bahagia kami</div>
 
-    <div class="container">
-        <h1>Undangan Pernikahan</h1>
-        <div class="sub-heading">Dengan penuh sukacita kami mengundang Anda untuk hadir dalam pernikahan kami</div>
+    <div class="names">Rani & Budi</div>
 
-        <div class="names">Rani & Budi</div>
+    <img src="https://via.placeholder.com/400x300?text=Foto+Pasangan" alt="Foto Pasangan" class="couple-photo" />
 
-        <!-- Tombol Putar Musik -->
-        <div class="play-button">
-            <button onclick="document.getElementById('musik').play()">Putar Musik</button>
-        </div>
-
-        <audio id="musik" loop>
-            <source src="original.mp3" type="audio/mpeg">
-            Browser Anda tidak mendukung elemen audio.
-        </audio>
-
-       <img src="fotoku.jpg" alt="Foto Pasangan" width="300">
-
-        <div class="info">
-            <p><strong>Tanggal:</strong> Minggu, 15 Juni 2025</p>
-            <p><strong>Waktu:</strong> 10.00 WIB - Selesai</p>
-            <p><strong>Tempat:</strong> Gedung Serbaguna Bahagia, Jl. Mawar No.123, Banyuwangi</p>
-        </div>
-
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126832.14469719632!2d114.2641447!3d-8.2192335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd15c3fcb218fe1%3A0x8e1b5af3b89a93f0!2sGedung%20Serbaguna!5e0!3m2!1sid!2sid!4v1624462926169!5m2!1sid!2sid"
-                allowfullscreen="" loading="lazy">
-            </iframe>
-        </div>
-
-        <div class="thank-you">
-            Kehadiran dan doa restu Anda merupakan kebahagiaan bagi kami. Terima kasih atas dukungan dan kasih sayangnya.
-        </div>
-
-        <div class="footer">
-            <p>Hormat kami,</p>
-            <p><strong>Rani & Budi</strong></p>
-        </div>
+    <div class="info">
+      <p><strong>Tanggal:</strong> Minggu, 15 Juni 2025</p>
+      <p><strong>Waktu:</strong> 10.00 WIB - Selesai</p>
+      <p><strong>Tempat:</strong> Gedung Serbaguna Bahagia<br>Jl. Mawar No.123, Banyuwangi</p>
     </div>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126832.14469719632!2d114.2641447!3d-8.2192335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd15c3fcb218fe1%3A0x8e1b5af3b89a93f0!2sGedung%20Serbaguna!5e0!3m2!1sid!2sid!4v1624462926169!5m2!1sid!2sid"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+
+    <div class="thankyou">
+      Kehadiran dan doa restu Anda merupakan kebahagiaan bagi kami. Terima kasih atas dukungan dan kasih sayangnya.
+    </div>
+
+    <div class="footer">
+      Hormat kami,<br><strong>Rani & Budi</strong>
+    </div>
+
+    <div class="music-notice">(Musik akan mulai setelah Anda klik halaman)</div>
+  </div>
+
+  <audio id="musik" loop>
+    <source src="original.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung pemutar audio.
+  </audio>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.body.addEventListener("click", function () {
+        const musik = document.getElementById("musik");
+        musik.play().catch((e) => {
+          console.log("Autoplay gagal:", e);
+        });
+      }, { once: true });
+    });
+  </script>
 </body>
 </html>
