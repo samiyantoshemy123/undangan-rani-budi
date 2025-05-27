@@ -78,6 +78,25 @@
             color: #777;
         }
 
+        .play-button {
+            margin: 20px 0;
+        }
+
+        .play-button button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #b56576;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .play-button button:hover {
+            background-color: #9d4b63;
+        }
+
         @media (max-width: 600px) {
             .container {
                 padding: 20px;
@@ -94,16 +113,22 @@
     </style>
 </head>
 <body>
-    <audio autoplay loop>
-  <source src="original.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
 
     <div class="container">
         <h1>Undangan Pernikahan</h1>
         <div class="sub-heading">Dengan penuh sukacita kami mengundang Anda untuk hadir dalam pernikahan kami</div>
 
         <div class="names">Rani & Budi</div>
+
+        <!-- Tombol Putar Musik -->
+        <div class="play-button">
+            <button onclick="document.getElementById('musik').play()">Putar Musik</button>
+        </div>
+
+        <audio id="musik" loop>
+            <source src="original.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
 
         <img src="https://via.placeholder.com/400x300?text=Foto+Pasangan" alt="Foto Pasangan" class="couple">
 
