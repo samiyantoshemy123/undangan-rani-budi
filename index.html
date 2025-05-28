@@ -4,71 +4,123 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Undangan Rani & Budi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(120deg, #ffe4e1, #fff0f5);
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #ffe4e1, #fff0f5);
       color: #333;
-      text-align: center;
+      overflow-x: hidden;
     }
+
     .container {
-      max-width: 800px;
+      max-width: 700px;
       margin: 50px auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      background: #ffffffcc;
+      backdrop-filter: blur(10px);
+      padding: 40px 30px;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     h1 {
-      font-size: 2.5em;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
       color: #b56576;
+      margin-bottom: 10px;
     }
+
     .subheading {
+      font-size: 1.1em;
       color: #6a4c93;
-      font-size: 1.2em;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
+
     .names {
-      font-size: 2em;
-      font-weight: bold;
-      margin: 20px 0;
+      font-size: 2.2em;
       color: #6a4c93;
+      font-weight: bold;
+      margin: 30px 0 10px;
     }
+
     .couple-photo {
       width: 100%;
-      max-width: 400px;
+      max-width: 350px;
       border-radius: 20px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      margin: 20px auto;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      margin: 25px auto;
+      display: block;
     }
+
     .info {
       font-size: 1.1em;
-      margin: 30px 0;
+      color: #555;
       line-height: 1.6;
+      margin-top: 20px;
     }
+
+    .info p {
+      margin: 10px 0;
+    }
+
     iframe {
       width: 100%;
       height: 300px;
-      border-radius: 15px;
       border: none;
-      margin: 20px 0;
-    }
-    .thankyou {
+      border-radius: 15px;
       margin-top: 30px;
+    }
+
+    .thankyou {
+      margin-top: 40px;
       font-style: italic;
       color: #444;
+      font-size: 1em;
     }
+
     .footer {
-      margin-top: 20px;
-      font-size: 0.9em;
-      color: #999;
+      margin-top: 30px;
+      font-size: 1em;
+      color: #666;
     }
+
+    .footer strong {
+      display: block;
+      margin-top: 5px;
+      color: #b56576;
+    }
+
     .music-notice {
       font-size: 0.9em;
       color: #999;
-      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 25px 20px;
+      }
+
+      .names {
+        font-size: 1.8em;
+      }
+
+      h1 {
+        font-size: 2.5em;
+      }
     }
   </style>
 </head>
@@ -76,16 +128,16 @@
 
   <div class="container">
     <h1>Undangan Pernikahan</h1>
-    <div class="subheading">Kami mengundang Anda untuk hadir dalam hari bahagia kami</div>
+    <div class="subheading">Kami mengundang Anda untuk hadir di hari bahagia kami</div>
 
     <div class="names">Rani & Budi</div>
 
-    <img src="fotoku.jpg" alt="Foto Pasangan" width="300">
+    <img src="fotoku.jpg" alt="Foto Pasangan" class="couple-photo">
 
     <div class="info">
       <p><strong>Tanggal:</strong> Minggu, 15 Juni 2025</p>
       <p><strong>Waktu:</strong> 10.00 WIB - Selesai</p>
-      <p><strong>Tempat:</strong> Gedung Serbaguna Bahagia<br>Jl. Mawar No.123, Banyuwangi</p>
+      <p><strong>Tempat:</strong><br>Gedung Serbaguna Bahagia<br>Jl. Mawar No.123, Banyuwangi</p>
     </div>
 
     <iframe
@@ -102,7 +154,7 @@
       Hormat kami,<br><strong>Rani & Budi</strong>
     </div>
 
-    <div class="music-notice">(Musik akan mulai setelah Anda klik halaman)</div>
+    <div class="music-notice">(Klik di mana saja untuk memulai musik)</div>
   </div>
 
   <audio id="musik" loop>
