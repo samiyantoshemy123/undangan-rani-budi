@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Undangan Rani & Budi</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -12,20 +12,28 @@
 
     body {
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(135deg, #ffe4e1, #fff0f5);
+      font-family: 'Montserrat', sans-serif;
+      background: url('https://i.ibb.co/FhHnXwB/bg-wedding-soft.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #333;
-      overflow-x: hidden;
+    }
+
+    .overlay {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .container {
-      max-width: 700px;
-      margin: 50px auto;
-      background: #ffffffcc;
-      backdrop-filter: blur(10px);
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.85);
       padding: 40px 30px;
-      border-radius: 25px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      border-radius: 30px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
       text-align: center;
       animation: fadeIn 1s ease-in-out;
     }
@@ -37,21 +45,21 @@
 
     h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 3em;
+      font-size: 3.5em;
       color: #b56576;
-      margin-bottom: 10px;
+      margin-bottom: 0;
     }
 
     .subheading {
-      font-size: 1.1em;
+      font-size: 1.2em;
       color: #6a4c93;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     .names {
-      font-size: 2.2em;
+      font-size: 2.5em;
+      font-weight: 600;
       color: #6a4c93;
-      font-weight: bold;
       margin: 30px 0 10px;
     }
 
@@ -59,7 +67,7 @@
       width: 100%;
       max-width: 350px;
       border-radius: 20px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
       margin: 25px auto;
       display: block;
     }
@@ -67,7 +75,7 @@
     .info {
       font-size: 1.1em;
       color: #555;
-      line-height: 1.6;
+      line-height: 1.8;
       margin-top: 20px;
     }
 
@@ -81,6 +89,7 @@
       border: none;
       border-radius: 15px;
       margin-top: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     .thankyou {
@@ -104,57 +113,58 @@
 
     .music-notice {
       font-size: 0.9em;
-      color: #999;
-      margin-top: 20px;
+      color: #888;
+      margin-top: 15px;
     }
 
     @media (max-width: 600px) {
       .container {
-        margin: 20px;
-        padding: 25px 20px;
-      }
-
-      .names {
-        font-size: 1.8em;
+        padding: 30px 20px;
       }
 
       h1 {
-        font-size: 2.5em;
+        font-size: 2.8em;
+      }
+
+      .names {
+        font-size: 2em;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Undangan Pernikahan</h1>
-    <div class="subheading">Kami mengundang Anda untuk hadir di hari bahagia kami</div>
+  <div class="overlay">
+    <div class="container">
+      <h1>Undangan Pernikahan</h1>
+      <div class="subheading">Dengan penuh cinta, kami mengundang Anda untuk hadir di hari bahagia kami</div>
 
-    <div class="names">Rani & Budi</div>
+      <div class="names">Rani & Budi</div>
 
-    <img src="fotoku.jpg" alt="Foto Pasangan" class="couple-photo">
+      <img src="fotoku.jpg" alt="Foto Pasangan" class="couple-photo">
 
-    <div class="info">
-      <p><strong>Tanggal:</strong> Minggu, 15 Juni 2025</p>
-      <p><strong>Waktu:</strong> 10.00 WIB - Selesai</p>
-      <p><strong>Tempat:</strong><br>Gedung Serbaguna Bahagia<br>Jl. Mawar No.123, Banyuwangi</p>
+      <div class="info">
+        <p><strong>Tanggal:</strong> Minggu, 15 Juni 2025</p>
+        <p><strong>Waktu:</strong> 10.00 WIB - Selesai</p>
+        <p><strong>Tempat:</strong><br>Gedung Serbaguna Bahagia<br>Jl. Mawar No.123, Banyuwangi</p>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126832.14469719632!2d114.2641447!3d-8.2192335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd15c3fcb218fe1%3A0x8e1b5af3b89a93f0!2sGedung%20Serbaguna!5e0!3m2!1sid!2sid!4v1624462926169!5m2!1sid!2sid"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+
+      <div class="thankyou">
+        Kehadiran dan doa restu Anda merupakan hadiah terbaik bagi kami. Terima kasih atas dukungan dan kasih sayang Anda.
+      </div>
+
+      <div class="footer">
+        Dengan hormat,<br><strong>Rani & Budi</strong>
+      </div>
+
+      <div class="music-notice">(Klik di mana saja untuk memulai musik)</div>
     </div>
-
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126832.14469719632!2d114.2641447!3d-8.2192335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd15c3fcb218fe1%3A0x8e1b5af3b89a93f0!2sGedung%20Serbaguna!5e0!3m2!1sid!2sid!4v1624462926169!5m2!1sid!2sid"
-      allowfullscreen=""
-      loading="lazy">
-    </iframe>
-
-    <div class="thankyou">
-      Kehadiran dan doa restu Anda merupakan kebahagiaan bagi kami. Terima kasih atas dukungan dan kasih sayangnya.
-    </div>
-
-    <div class="footer">
-      Hormat kami,<br><strong>Rani & Budi</strong>
-    </div>
-
-    <div class="music-notice">(Klik di mana saja untuk memulai musik)</div>
   </div>
 
   <audio id="musik" loop>
